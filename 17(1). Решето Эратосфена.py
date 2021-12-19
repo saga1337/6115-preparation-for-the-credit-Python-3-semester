@@ -10,7 +10,7 @@ def eratosfen(n):
     array[1] = False ## по определению числа 0 и 1 не считаются простыми
     for i in range(2, n):
         if array[i]: 
-    for k in range(2 * i, n, i): ## range(start, stop, step)
-        array[k] = False
+            for k in range(2 * i, n, i): ## range(start, stop, step)
+                array[k] = False
     for k in range(n):
         print(k, ' - ', 'простое' if array[k] else 'составное')
